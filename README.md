@@ -48,7 +48,7 @@ apart.
 
 ```yaml
 name: HAIYANG ZHAO
-contact: "Harbin, China  |  +86 18631184375  |  2933869945@qq.com"
+contact: "Harbin, China  |  +86 1XX XXXX XXXX  |  your.email@example.com"
 availability: "Available: Dec 1, 2026 – Feb 28, 2027  |  4–5 days per week  |  Beijing or Shanghai"
 
 sections:
