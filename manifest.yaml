@@ -1,0 +1,17 @@
+name: english-resume
+version: 1.0.0
+description: >
+  Declarative manifest. SKILL.md carries the always-needed rules (section order,
+  availability line, what to delete, bullet shape); the heavier reference files
+  load only when the task actually needs them, so a one-line wording change does
+  not pull the whole layout specification into context.
+
+always_load:
+  - references/content-rules.md
+
+references:
+  on_demand:
+    - condition: writing or rewriting bullet text, picking verbs, quantifying an achievement, or translating Chinese institution/competition/course names
+      path: references/phrasing.md
+    - condition: the user asks to change margins, fonts, column positions, line spacing, or the build does not fit one page and typography is in question
+      path: references/layout-spec.md

@@ -1,0 +1,15 @@
+# build artefacts
+out/
+*.py[cod]
+__pycache__/
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# local content files (your own resume stays out of the repo)
+resume.yaml
+resume*.yaml
+!examples/*.yaml

@@ -1,0 +1,121 @@
+# english-resume — worked example
+#
+# This is a real resume, kept in the repo so the layout can be checked by
+# building it. Copy it, replace the content, keep the section order.
+#
+# Build:  python scripts/build.py examples/haiyang-zhao.yaml --png
+
+name: HAIYANG ZHAO
+
+contact: "Harbin, China  |  +86 18631184375  |  2933869945@qq.com"
+
+# Recruiters screen on this line first. Keep it, even if it feels obvious.
+availability: "Available: Dec 1, 2026 – Feb 28, 2027  |  4–5 days per week  |  Beijing or Shanghai"
+
+sections:
+  # PROFILE goes first: it is the only paragraph a screener reads in full.
+  - type: paragraph
+    title: PROFILE
+    text: >
+      Final-year Big Data Management & Application undergraduate at Harbin Engineering
+      University, admitted to the M.S. in Management Science & Engineering through
+      postgraduate recommendation. Turns LLM / cloud capability into delivered workflows:
+      a local AI-agent pipeline and a private RAG knowledge base cut one literature review
+      from ~4 hours to ~40 minutes. Seeking a Winter 2026–27 internship in AI application
+      engineering, AI solutions consulting or data analytics.
+
+  - type: entries
+    title: EDUCATION
+    entries:
+      - date: "2023.09 – 2027.06"
+        org: Harbin Engineering University
+        role: "Big Data Management and Application (Bachelor)"
+        location: Harbin, China
+        bullets:
+          - "Relevant coursework: Cloud Computing, Python Programming, Data Structures and
+            Algorithms, Database Principles (MySQL), Statistics, Data Mining & Machine
+            Learning, Business Data Analysis, Operations Research."
+          - "Admitted to M.S. in Management Science and Engineering at HEU, Sep 2026
+            (postgraduate recommendation, no entrance exam)."
+
+  - type: entries
+    title: EXPERIENCE
+    entries:
+      - date: "2026.07 – 2026.09"
+        org: "China First Heavy Industries (CFHI), Information Center"
+        role: "Data & BI Intern"
+        location: Harbin, China
+        bullets:
+          - "Executed data-standardization workflows on the enterprise data platform:
+            cleaned master data and reconciled organization tables across systems."
+          - "Built Power BI Desktop dashboards over listed-company financial statements and
+            authored the accompanying financial analysis report."
+
+  # Projects are ordered on purpose: the AI work leads, because that is the target role.
+  - type: entries
+    title: PROJECTS
+    entries:
+      - date: "2026"
+        org: "Local AI Agent Workflow & Private RAG Knowledge Base"
+        role: "Project Lead"
+        bullets:
+          - "Integrated DeepSeek-series LLM APIs and ran local inference; benchmarked
+            official API, third-party hosting and on-prem inference on latency, cost and
+            data compliance, then chose the architecture under a \"sensitive documents stay
+            on-prem\" constraint."
+          - "Embedded the models into research and office workflows (batch literature
+            summarization, code generation, weekly reporting, spreadsheet cleaning); built 3
+            reusable agent templates, cutting one literature review from ~4 hours to 40
+            minutes."
+          - "Built a Dify-based course-material Q&A knowledge base — 500-character
+            overlapping chunks, hybrid retrieval and citation tracing — substantially
+            reducing factual errors in long-document Q&A."
+
+      - date: "2025"
+        org: "Shipbuilding Industry Fundamental Analysis Dashboard"
+        role: "Power BI, Power Query, DAX"
+        bullets:
+          - "Analyzed five years of annual reports for 10 A-share shipbuilding and shipping
+            listed companies, reconstructing cycle positioning from order structure, margin,
+            receivables and operating cash flow."
+          - "Designed an interactive drill-down dashboard covering asset structure,
+            solvency, operating efficiency, profitability and DuPont analysis."
+          - "Concluded that the industry sits in an order-delivery upcycle while earnings
+            realization lags by 1–2 years in reported financials."
+
+      - date: "2025"
+        org: "Market Research Competition: eVTOL Consumer Potential"
+        role: "Python scraping, survey design, persona analysis"
+        bullets:
+          - "Collected 1,194 valid questionnaires and scraped 30,698 social-media and
+            industry-report texts in Python; cleaned, word-cloud analyzed and turned the
+            result into user personas."
+          - "Identified three adoption barriers (safety trust, unit price, experience
+            duration) and delivered segmented pricing and promotion recommendations."
+
+  # Awards get their own section. Burying them inside a project bullet hides them.
+  - type: entries
+    title: AWARDS
+    entries:
+      - date: "2026.02"
+        org: "National Third Prize, Global Management Challenge (GMC) China"
+      - date: "2025.12"
+        org: "National Third Prize, MathorCup Big Data Challenge"
+      - date: "2025.11"
+        org: "Provincial Second Prize, China Undergraduate Mathematical Contest in Modeling"
+      - date: "2024–2026"
+        org: "Excellent Student Scholarship (2× Second Prize, 3× Third Prize)"
+
+  - type: skills
+    title: SPECIAL SKILLS
+    groups:
+      - label: "Professional Skills"
+        items:
+          - "Python for data analysis and modeling; Power BI with DAX for visualization
+            dashboards; SQL (MySQL); Power Query."
+          - "AI Agent workflows (LLM API integration, RAG, Dify, agent orchestration) for
+            human-AI collaborative development and office automation."
+          - "Excel modeling, PowerPoint structured storytelling and Word long-form reporting."
+      - label: "Language Proficiency"
+        items:
+          - "CET-6: 525; CET-4: 562. Comfortable working in English."
